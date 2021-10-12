@@ -52,7 +52,7 @@ class Group
                         echo $row1[$j] . ' - ' . $row2[$j] . '<br />';
 
                 }
-            } else {   //все последующие туры
+            } else {   //all next tours
                 array_push($row2, array_pop($row1));
                 $first = array_shift($row1);
                 array_unshift($row1, array_shift($row2));
